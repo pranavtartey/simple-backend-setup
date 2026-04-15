@@ -14,7 +14,7 @@ async function bootstrap() {
     app.enableCors(); // Default allow all if none specified
   }
 
-  const port = process.env.PORT ?? 5050;
+  const port = process.env.PORT ?? 8080;
   await app.listen(port, '0.0.0.0');
   console.log(`Application is running on: http://0.0.0.0:${port}`);
 }
